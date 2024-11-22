@@ -1,0 +1,9 @@
+{
+  "name": "with-workspaces",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev:app": "pnpm -F \"app\" dev",
+    "dev:admin": "pnpm -F \"admin\" dev"
+  }
+}

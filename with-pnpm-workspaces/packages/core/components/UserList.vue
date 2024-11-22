@@ -1,0 +1,20 @@
+<script setup lang="ts">
+import { useAsyncData } from '#app'
+import { computed } from 'vue';
+
+const res = await useFetch('https://jsonplaceholder.typicode.com/users');
+
+const users = computed(() => res.data.value);
+console.log(useAsyncData);
+</script>
+
+<template>
+  <div>
+    <h2>Users</h2>
+    <ul>
+      <li v-for="user in users" :key="user.id">
+        {{user.name}}
+      </li>
+    </ul>
+</div>
+</template>

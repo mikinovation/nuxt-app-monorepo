@@ -1,0 +1,28 @@
+{
+  "name": "@project/core",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "type-check": "vue-tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "rollup": "^4.27.3",
+    "rollup-plugin-vue": "^6.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.1.10"
+  }
+}
